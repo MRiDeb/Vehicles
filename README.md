@@ -7,5 +7,5 @@ The purchase price – How much should I pay for a car at an auction?
 The asking price – What price should I set when selling the car?
 Since the dataset contains only one price column, and it is not explicitly defined as either the purchase price or the asking price, I will focus on answering the latter question.
 
-Please find the code here: https://github.com/MRiDeb/Coupon/blob/main/prompt.ipynb
+Please find the code here: https://github.com/MRiDeb/Vehicles/blob/main/prompt_II.ipynb
 
