@@ -39,9 +39,8 @@ To build a price prediction model, the dataset needs to be cleaned, as it contai
 3. Remove rows with empty target values, manufacturer, or model type, as these three fields seem to be highly relevant.
 4. Replace empty values: Forward fill will be used to replace empty values after sorting the data by manufacturer and model. The idea is that the same manufacturer and model should have similar values.
 5. Split the dataset into training and testing datasets.
-   ![image](https://github.com/user-attachments/assets/227ab86a-1126-40ff-b04e-637ef93185f4)
+![image](https://github.com/user-attachments/assets/227ab86a-1126-40ff-b04e-637ef93185f4)
 
-![image](https://github.com/user-attachments/assets/9232a0f1-e6a8-4c5f-9854-9504ece5cfd4)
 
 Modeling:
 1. Transform categorical columns into numerical columns using James-Stein encoding.
