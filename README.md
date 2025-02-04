@@ -23,6 +23,8 @@ Data Understanding:
 By examining a few rows and the dataset information, we see that the dataset consists of over 400,000 records from various car manufacturers, including different models, their condition, year of manufacture, and car specifications such as color, engine type, and location of the car. I assume that this location represents where the car is currently situated for sale. The data also contains two identifier columns.
 
 Exploratory Data Analysis:
+![image](https://github.com/user-attachments/assets/d0c6f39a-b0d1-42d5-a778-2d63312c2064)
+
 1. Create charts for numerical columns.
 2. Check how many unique values exist in each categorical column.
 3. Since the price data is skewed to one side, we will take log values of price to predict. Taking the logarithm (log) of price data that is skewed to one side is a common practice to normalize the distribution and improve the accuracy of predictions in a model
