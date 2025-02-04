@@ -49,10 +49,8 @@ Modeling:
 3. Set up a linear regression model using a pipeline.
 4. Calculate the Mean Squared Error (MSE) between the training and test datasets.
 
-Evaluation:
-1. Using few data points, predit the price of the car.
 
-   Findings:
+Findings:
 I tried various degrees of PolynomialFeatures along with different numbers of features selected using SequentialFeatureSelector. The best MSE is still around 0.25 (in log scale). Below is a comparison of log-transformed values and their inverses to see the actual price values, which shows that the model is significantly off.
 
 I Googled for some help and found this solution: https://github.com/avidunixuser/UsedCarFeatureImportance/blob/main/3.%20models.ipynb. I liked how each step was performed and noticed that RandomForestRegressor produced a better outcome. So, I tried it below, and to my surprise, it performed very well, with an MSE of 0.02 on the training set and 0.12 on the test set. Looking at the predicted used car prices, the results are very reassuring.
