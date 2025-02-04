@@ -25,6 +25,8 @@ By examining a few rows and the dataset information, we see that the dataset con
 Exploratory Data Analysis:
 1. Create charts for numerical columns.
 2. Check how many unique values exist in each categorical column.
+3. Since the price data is skewed to one side, we will take log values of price to predict. Taking the logarithm (log) of price data that is skewed to one side is a common practice to normalize the distribution and improve the accuracy of predictions in a model
+![image](https://github.com/user-attachments/assets/9ac683f3-50c0-4184-88d7-3a6e6cbae401)
 
 Data Preparation:
 
@@ -35,6 +37,7 @@ To build a price prediction model, the dataset needs to be cleaned, as it contai
 3. Remove rows with empty target values, manufacturer, or model type, as these three fields seem to be highly relevant.
 4. Replace empty values: Forward fill will be used to replace empty values after sorting the data by manufacturer and model. The idea is that the same manufacturer and model should have similar values.
 5. Split the dataset into training and testing datasets.
+![image](https://github.com/user-attachments/assets/9232a0f1-e6a8-4c5f-9854-9504ece5cfd4)
 
 Modeling:
 1. Transform categorical columns into numerical columns using James-Stein encoding.
