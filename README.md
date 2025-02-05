@@ -51,6 +51,8 @@ Modeling:
 
 
 Findings:
-I tried various degrees of PolynomialFeatures along with different numbers of features selected using SequentialFeatureSelector. The best MSE is still around 0.25 (in log scale). Below is a comparison of log-transformed values and their inverses to see the actual price values, which shows that the model is significantly off.
+I tried various degrees of PolynomialFeatures along with different numbers of features selected using SequentialFeatureSelector. The best MSE using Linear regression was still around 0.25 (in log scale). In the code, there is a comparison of log-transformed values and their inverses to see the actual price values, which shows that the model is significantly off.
 
 I Googled for some help and found this solution: https://github.com/avidunixuser/UsedCarFeatureImportance/blob/main/3.%20models.ipynb. I liked how each step was performed and noticed that RandomForestRegressor produced a better outcome. So, I tried it below, and to my surprise, it performed very well, with an MSE of 0.02 on the training set and 0.12 on the test set. Looking at the predicted used car prices, the results are very reassuring.
+
+Now, to answer the question on clear recommendations for your client—a used car dealership—regarding what consumers value in a used car: consumers typically value the odometer reading, year, model, and condition of the car. These factors can be derived using the Sequential Feature Selector.
