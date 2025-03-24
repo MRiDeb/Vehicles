@@ -10,7 +10,6 @@ Since the dataset contains only one price column, and it is not explicitly defin
 Please find the code here: https://github.com/MRiDeb/Vehicles/blob/main/prompt_II.ipynb
 
 
-Your text conveys the steps well but has multiple spelling and grammar issues. Here's a corrected version with improved readability and accuracy:
 
 ## According to the CRISP-DM process, the first step is to understand the business.
 
